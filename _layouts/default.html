@@ -1,20 +1,392 @@
 <!DOCTYPE html>
 <html>
+<head>
+    <!-- jquery -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- google font -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,600,400italic,500,900' rel='stylesheet' type='text/css'>
+    <!-- media queries -->
+    <script type="text/javascript" src="css3-mediaqueries.js"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- external stylesheets & scripts -->
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/home.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/universal.css">
+    <script type="text/javascript" src="javascripts/jswarning.js"></script>
+    <script type="text/javascript" src="javascripts/typed.js"></script>
+    <script type="text/javascript" src="javascripts/smooth-scroll.js"></script>
+    <script type="text/javascript" src="javascripts/menu-toggle.js"></script>
+    <script type="text/javascript" src="javascripts/viewport.js"></script>
+    
+    <title>2491 No Mythic</title>
+</head>
+<style>
+    .continue {
+        position:absolute;
+        bottom:15px;
+        right:315px;
+        z-index:99;
+    }
+    .active-continue {
+        right:315px !important;
+    }
+    @media screen and (max-width: 992px) {
+                .helios {
+                    max-width:50vw;
+                }
+                .all, .more-than-robots, .what-is-first {
+                    height:auto;
+                    min-height: 410px;
+                }
+                .overview {
+                    min-height:650px;
+                    background-position: center center;
+                }
+                .more-than-robots, .first {
+                    background-position: center center;
+                }
+            }
+            @media screen and (max-width: 768px) {
+                #left-menu {
+                    margin-left:-300px;
+                }
+                .menu-show {
+                    display:inline;
+                }
+                #sponsors-visionary {
+                    left:0;
+                    right: 0;
+                }
+                #full-container {
+                    padding-left:0;
+                }
+                .all, #contact-us, {
+                    padding-right:30px;
+                }
+                .blog {
+                    padding-right:0;
+                }
+                .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+                    padding-right:0;
+                }
+                .carousel-caption {
+                    padding-right:0;
+                    top:28vh;
+                }
+                #ctitle {
+                    padding-right:0;
+                }
+                .continue {
+                    right:15px;
+                }
+            }
+</style>
+<body>
 
-  {% include head.html %}
+<i class="fa fa-bars fa-2x menu-show"></i>
 
-  <body>
+<!-- ################## LEFT MENU ################## -->
 
-    {% include header.html %}
+    <div id="left-menu">
+        <img class="header" src="https://raw.githubusercontent.com/lauraschultz/2491website/gh-pages/media/web-header.png" />
+        <div class="sb-top"></div>
+        <nav>
+            <div class="sb-link">
+                <ul class="fa-ul">
+                    <li><a href="/2491website/#"><i class="fa-li fa fa-home"></i>&nbsp;home</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sb-link">
+                <ul class="fa-ul">
+                    <li><a href="/2491website/#blog-highlights"><i class="fa-li fa fa-picture-o"></i>&nbsp;blog highlights</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sb-link">
+                <ul class="fa-ul">
+                    <li><a href="/2491website/#meet-helios"><i class="fa-li fa fa-wrench"></i>&nbsp;meet helios</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sb-link">
+                <ul class="fa-ul">
+                    <li><a href="/2491website/#what-is-first"><i class="fa-li fa fa-question"></i>&nbsp;what is FIRST?</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sb-link">
+                <ul class="fa-ul">
+                    <li><a href="/2491website/#2016-events"><i class="fa-li fa fa-calendar"></i>&nbsp;2016 events</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sb-link">
+                <ul class="fa-ul">
+                    <li><a href="/2491website/#team-sponsors"><i class="fa-li fa fa-money"></i>&nbsp;team sponsors</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sb-link">
+                <ul class="fa-ul">
+                    <li><a href="/2491website/#contact-us"><i class="fa-li fa fa-phone"></i>&nbsp;contact us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sb-link">
+                <ul class="fa-ul">
+                    <li><a href="/2491website/resources"><i class="fa-li fa fa-users"></i>&nbsp;parent/student resources</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="social-icons-container">
+            <div class="social-icons"> <a href="http://twitter.com" target="_blank"><i class="fa fa-3x fa-twitter-square t s"></i></a>
+ <a href="http://facebook.com" target="_blank"><i class="fa fa-3x fa-facebook-square f s"></i></a>
+ <a href="http://youtube.com" target="_blank"><i class="fa fa-3x fa-youtube-square y s"></i></a>
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+                <div id="end-text"><a href="/">legal</a> ・ <a href="/">sitemap</a>
+                </div>
+            </div>
+        </div>
     </div>
+    <div id="full-container">
+        <div id="jswarning"> <span class="glyphicon glyphicon-warning-sign" aria-hidden="true"></span>
+ <span>Uh oh! It looks like you're trying to browse this page without JavaScript enabled. As you can probably see, it doesn't work so well.</span>
+        </div>
+        
+        <!-- ################## OVERVIEW ################## -->
+        <div class="overview all">
+            <div style="margin-top:-5px"><span id="thin">We are </span><span id="thick" class="element"></span>
+            </div>
+            <div id="overview-text">
+                <h4>We are FIRST robotics team 2491 No Mythic from St. Paul, Minnesota. Made up of three small charter schools, we are the only metro Minnesota team to win a regional in the 2016 season! Come visit us at the FIRST World Championships!</h4>
+            </div>
+            <div id="sponsors-visionary"> <a href="HTTP://PACELABS.COM" target="_blank">
+                        <img src="http://static.tumblr.com/u0zl25j/Jjlns9i5l/pace-transparent.png"/>
+                    </a>
+ <a href="http://www.minnetronix.com" target="_blank">
+                        <img src="http://www.minnetronix.com/assets/images/design/minnetronix-logo-web.png"/>
+                    </a>
+            </div>
+        </div>
+        
+        <!-- ################## FIRST ################## -->
+        <div class="first all">
+            <div id="words" style="text-align:justify">
+                 <h4>Once myths were that of legend, Gods and Goddesses, Olympus and the Underworld. We used myths to explain what we couldn’t, attributing what we couldn’t comprehend to the powers of the gods. With science we can now take what used to be powers of the gods and explain them, turning fire stolen from the gods into a cloud of burning gas and vengeance from the gods into plate tectonics and changing climates. Myths told of people greater than we had ever seen; capable of amazing feats that the mind could barely grasp. But now we have to be those heroes, taking what was once considered magic or the power of god and harnessing it like Prometheus. Of course we create beautiful complex machines, but they are just a catalyst to help us to become what we are destined to be: a new generation of scientists, engineers and inventors. In a world free of myths, we are No Mythic. </h4>
+            </div> <a class="btn btn-default continue" href="/" role="button">Learn more about our team</a>
+        </div>
+        
+        {{ content }}
+        
+        <!-- ################## MEET HELIOS ################## -->
+        <div class="meet-helios all" id="meet-helios"> <span id="thin">Meet</span><span id="thick"> Helios</span>
 
-    {% include footer.html %}
+            <div class="row">
+                <div class="col-md-6">
+                    <img class="helios" src="http://static.tumblr.com/u0zl25j/FNQnmno82/helios-transparent.png" />
+                </div>
+                <div class="col-md-6">
+                    <div id="stats">
+                         <h4>With a fast drive train and two seperate systems that can lift both totes and recycling containers, Helios is ready to take on any challenge that comes it's way.</h4>
+                         <h2><i>Quick Stats:</i></h2>
+                        <div id="qs" style="margin-top:5px"><span>Name:</span>Helios</div>
+                        <div id="qs"><span>Weight:</span>116 lbs</div>
+                        <div id="qs"><span>Dimensions:</span>26.5 x 26.5 x 78 inches</div>
+                        <div id="qs"><span>Drive Train:</span>Omni O-Drive</div>
+                        <div id="qs"><span>Tote Capabilities:</span>Can stack four totes</div>
+                        <div id="qs"><span>Container Capabilities:</span>Can add a recycling container to a 5 tote stack</div>
+                        <div id="qs"> <span>Autonomous function:</span> Can either pick up a container from the step or pick up a coopertition tote and container from the staging zone</div>
+                    </div>
+                </div>
+            </div> <a class="btn btn-default continue" href="/" role="button">See all robots from previous seasons</a>
+        </div>
+        
+        <!-- ################## WHAT IS FIRST ################## -->
+        <div class="row">
+            <div class="col-md-6">
+                <div class="what-is-first" id="what-is-first">
+                    <img src="http://www.usfirst.org/uploadedImages/Robotics_Programs/FRC/FRC_Communications_Resource_Center/Branding_and_Logos/FIRSTicon_RGB.jpg" />
+                    <div><span id="thin" style="text-shadow:none">What is </span><span id="thick" style="text-shadow:none;">FIRST?</span>
+                    </div>
+                     <h4 style="padding:20px;text-align:justify; text-indent:1pc">
+                            FIRST is an organization with the mission of inspiring young people to be science and technology leaders, by engaging them in exciting mentor-based programs that build science, engineering and technology skills, that inspire innovation, and that foster well-rounded life capabilities including self-confidence, communication, and leadership.
+                        </h4>
+                </div>
+            </div>
+            
+            <!-- ################## MORE THAN ROBOTS ################## -->
+            <div class="col-md-6">
+                <div class="more-than-robots"> <span id="thin">It's About</span><span id="thick"> More Than Robots</span>
+                     <h4><div class="text">
+            Lorem ipsum dolor sit amet, mea error zril et. Est nibh illud ne, sententiae efficiantur per no. Eu ludus doming pro, at mea elit prima possit. Duo causae oblique ea. Quot tritani minimum ex has, nobis accusam consetetur ne eum, ullum suavitate usu ad. Pro ex dolor dolores, per soluta putant omnium cu.
 
-  </body>
+Cu inermis necessitatibus ius, ferri eruditi mel ex. Usu ei dico hinc, ius erat facilisi eu. No amet argumentum duo, illud alienum dissentias ut quo, cibo perpetua expetenda ea sit. Aliquam tacimates electram quo in, eu dicit dolore contentiones vel. Eam quod latine ne, aliquando honestatis an pri, vix laudem doming dicunt an.
+        </div></h4>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ################## 2016 EVENTS ################## -->
+        <div class="season-schedule all" id="2016-events">
+            <div style="text-align:center; padding-bottom:30px"><span id="thin">2016 </span><span id="thick">Events</span>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <table>
+                        <tr>
+                            <td>
+                                <time class="icon"> <em>Saturday</em><strong>January</strong><span>3</span>
+                                </time>
+                            </td>
+                            <td style="padding:10px" class="event"><strong>Kickoff</strong>
+                                <br>University of Minnesota, Northrop Auditorium
+                                <br><em>Minneapolis, MN</em>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <time class="icon"><em>Saturday</em>  <strong>February</strong>  <span>14</span>
+                                </time>
+                            </td>
+                            <td style="padding:10px" class="event"><strong>Pre-Ship Regional</strong>
+                                <br>Eagan High School
+                                <br><em>Eagan, MN</em>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <time class="icon"><em>Thurs - Sat</em><strong>February</strong><span style="font-size:2.4em; padding-top:1em">26-28</span>
+                                </time>
+                            </td>
+                            <td style="padding:10px" class="event"><strong>Northern Lights Regional</strong>
+                                <br>Duluth Entertainment Convention Center
+                                <br><em>Duluth, MN</em>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-6">
+                    <table>
+                        <tr>
+                            <td>
+                                <time class="icon"><em>Thurs - Sat</em><strong>April</strong><span style="font-size:2.5em; padding-top:1em">2-4</span>
+                                </time>
+                            </td>
+                            <td style="padding:10px" class="event"><strong>North Star Regional</strong>
+                                <br>Mariucci Arena
+                                <br><em>Minneapolis, MN</em>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <time class="icon"><em>Wed - Sat</em><strong>April</strong><span style="font-size:2.4em; padding-top:1em">22-25</span>
+                                </time>
+                            </td>
+                            <td style="padding:10px" class="event"><strong>Championship</strong>
+                                <br>Edward Jones Dome
+                                <br><em>St. Louis, MI</em>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        <!-- ################## SPONSORS ################## -->
+        <div class="sponsors all" id="team-sponsors">
+            <div id="intro">
+                <div id="thick">Sponsors</div>
+                 <h4 style="text-shadow:1px 1px 5px rgba(0,0,0,0.4)">Thank you to all of our sponsors from the 2014 - 2016 season! Our team couldn't exist without your support.
+                        <br>
+                        Interested in becoming a sponsor? Find out more <a href="/donate">here</a>.
+                    </h4>
+            </div>
+            <div id="logo-background"> <a href="HTTP://PACELABS.COM" target="_blank">
+                        <img src="https://www.pacelabs.com/assets/documents/press-kit/logo-corporate.jpg"/>
+                    </a>
+ <a href="http://www.minnetronix.com" target="_blank">
+                        <img style="-webkit-filter:brightness(0); filter:brightness(0)"src="http://www.minnetronix.com/assets/images/design/minnetronix-logo-web.png"/>
+                    </a>
+ <a href="http://www.qtidesign.com" target="_blank">
+                        <img src="http://www.qtidesign.com/images/parts/header/logo.gif"/>
+                   </a>
+
+                <img src="http://static.tumblr.com/u0zl25j/KlWnl4fzj/friends_and_family.png" /> <a href="http://greatriverschool.org" target="blank">
+                       <img src="http://static1.squarespace.com/static/5411fb35e4b018c63cea80d1/t/542dafdde4b0e285694c7d56/1421962095229/?format=1500w" />
+                   </a>
+ <a href="http://triangleumn.com" target="blank">
+                       <img src="http://triangleumn.com/wp-content/uploads/2014/04/Triangle-website-logo1.png" />
+                   </a>
+
+                <img src="http://static.tumblr.com/u0zl25j/XyEnisrds/groveland-logo.png" />
+                <img src="http://static.tumblr.com/u0zl25j/tdmnl4g25/mercedesbenz.png" />
+            </div>
+        </div>
+        
+        <!-- ################## CONTACT US ################## -->
+        <div id="contact-us">
+            <div id="thick">Contact us</div>
+             <h4>We'd love to hear from you!</h4>
+            <div class="row">
+                <div class="col-md-6">
+                    <table>
+                        <tr>
+                            <td valign="middle"><i class="fa fa-envelope-square fa-3x"></i>
+                            </td>
+                            <td valign="middle">
+                                <h3>&nbsp; 2491nomythic@gmail.com</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="middle"><i class="fa fa-phone-square fa-3x"></i>
+                            </td>
+                            <td valign="middle">
+                                <h3>&nbsp; 651-300-2491</h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="middle"><i class="fa fa-pencil-square fa-3x"></i>
+                            </td>
+                            <td valign="middle">
+                                <h3>&nbsp; No Mythic<BR>&nbsp; 1326 Energy Park Drive<br>&nbsp; St. Paul, MN 55108</h3>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-md-6">
+                    <table>
+                        <tr>
+                            <td valign="middle"><i class="top-sm fa fa-facebook-square fa-3x"></i>
+                            </td>
+                            <td valign="middle">
+                                <h3>&nbsp; /<a href="http://facebook.com/2491nomythic" target="_blank">2491NoMythic</a></h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="middle"><i class="top-sm fa fa-twitter-square fa-3x"></i>
+                            </td>
+                            <td valign="middle">
+                                <h3>&nbsp; @<a href="http://twitter.com/2491NoMythic" target="_blank">2491NoMythic</a></h3>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td valign="middle"><i class="top-sm fa fa-youtube-square fa-3x"></i>
+                            </td>
+                            <td valign="middle">
+                                <h3>&nbsp;/<a href="http://youtube.com/user/NoMthic2491" target="_blank">NoMthic2491</a></h3>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            </div>
+</body>
 
 </html>

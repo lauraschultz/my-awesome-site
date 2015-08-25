@@ -1,0 +1,545 @@
+<style>
+            /* ---------- GENERAL ---------- */
+            .continue {
+                position:absolute;
+                bottom:15px;
+                right:315px;
+                z-index:99;
+            }
+            .active-continue {
+                right:315px !important;
+            }
+            #ctitle {
+                position:absolute;
+                z-index:4;
+                left:0;
+                right:0;
+                margin-left:auto;
+                margin-right:auto;
+                padding-top:30px;
+                padding-right:300px;
+            }
+            .active-ctitle {
+                padding-right:300px !important;
+            }
+            #jswarning {
+                position:fixed;
+                bottom:0;
+                right:0;
+                visibility:default;
+                background:#fffff7;
+                padding:20px;
+                width:400px;
+                z-index:40;
+                box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.7);
+            }
+            .glyphicon-warning-sign {
+                color:#d06060;
+                padding-right:20px;
+                float:left;
+                font-size:55px;
+            }
+            #full-container {
+                box-sizing:border-box;
+                padding-left:300px;
+                transition: all .3s;
+                -webkit-transition: all .3s;
+            }
+            .active-full-container {
+                padding-left:300px !important;
+                transition: all .3s;
+                -webkit-transition: all .3s;
+            }
+            .all {
+                height:100vh;
+                width:100vw;
+                padding:30px;
+                box-sizing:border-box;
+                padding-right:330px;
+                transition: all .3s;
+                -webkit-transition: all .3s;
+                color:white;
+                position:relative;
+                text-align:center;
+                overflow:hidden;
+            }
+            .active-all {
+                padding-right:330px !important;
+                transition: all .3s;
+                -webkit-transition: all .3s;
+            }
+            /* ---------- OVERVIEW ---------- */
+             .overview {
+                padding-top:0px;
+                text-align:center;
+                background: url('https://raw.githubusercontent.com/lauraschultz/2491website/gh-pages/media/team.JPG') no-repeat center center;
+                background-attachment: fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                background-position:30px top;
+            }
+            .overview #overview-text {
+                width:55vw;
+                float:right;
+                display:inline;
+                box-sizing:border-box;
+                padding:30px;
+                display:none;
+            }
+            #sponsors-visionary {
+                position:absolute;
+                bottom:0;
+                left:0;
+                right: 300px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #sponsors-visionary img {
+                -webkit-filter: grayscale(1) brightness(10) drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.4));
+                filter: grayscale(1) brightness(10) drop-shadow(2px 2px 3px rgba(0, 0, 0, 0.4));
+                padding:0px 30px 10px 30px;
+                width:250px;
+            }
+            .active-sponsors-visionary {
+                left: 300px !important;
+            }
+            #typed-cursor {
+                opacity: 1;
+                -webkit-animation: blink 0.9s infinite;
+                -moz-animation: blink 0.9s infinite;
+                animation: blink 0.9s infinite;
+                font-size:70px;
+                font-weight:100;
+                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+            }
+            @keyframes blink {
+                0% {
+                    opacity:1;
+                }
+                50% {
+                    opacity:0;
+                }
+                100% {
+                    opacity:1;
+                }
+            }
+            @-webkit-keyframes blink {
+                0% {
+                    opacity:1;
+                }
+                50% {
+                    opacity:0;
+                }
+                100% {
+                    opacity:1;
+                }
+            }
+            @-moz-keyframes blink {
+                0% {
+                    opacity:1;
+                }
+                50% {
+                    opacity:0;
+                }
+                100% {
+                    opacity:1;
+                }
+            }
+            /* ---------- FIRST ---------- */
+             .first {
+                background:url("https://raw.githubusercontent.com/lauraschultz/2491website/gh-pages/media/susan.jpg") no-repeat center center;
+                background-attachment: fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                background-position:300px center;
+            }
+            #words {
+                width:100%;
+                box-sizing:border-box;
+                padding-left:32%;
+                padding-top:15vh;
+                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+                padding-right:70px;
+            }
+            /* ---------- BLOG ---------- */
+             .blog {
+                padding:0;
+                padding-right:300px;
+            }
+            .active-blog {
+                padding-right:300px !important;
+            }
+            .carousel-indicators {
+                display:none;
+            }
+            .carousel-control {
+                z-index:99;
+            }
+            .item {
+                min-height:100vh;
+                min-width:100vw;
+            }
+            .item img {
+                min-height:100vh;
+                min-width:100vw;
+                background-attachment: fixed;
+            }
+            .image {
+                position: absolute;
+                width:100%;
+                height:100%;
+            }
+            .gradient {
+                position:absolute;
+                top:0;
+                left:0;
+                width:100vw;
+                height:100vh;
+                z-index:0;
+            }
+            .gradient1 {
+                background: -moz-linear-gradient(-45deg, rgba(36, 198, 220, 0.611) 0%, rgba(81, 74, 157, 0.611) 100%);
+                background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(36, 198, 220, 0.611)), color-stop(100%, rgba(81, 74, 157, 0.611)));
+                background: -webkit-linear-gradient(-45deg, rgba(36, 198, 220, 0.611) 0%, rgba(81, 74, 157, 0.611) 100%);
+                background: -o-linear-gradient(-45deg, rgba(36, 198, 220, 0.611) 0%, rgba(81, 74, 157, 0.611) 100%);
+                background: -ms-linear-gradient(-45deg, rgba(36, 198, 220, 0.611) 0%, rgba(81, 74, 157, 0.611) 100%);
+                background: linear-gradient(135deg, rgba(36, 198, 220, 0.611) 0%, rgba(81, 74, 157, 0.611) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#7324c6dc', endColorstr='#73514a9d', GradientType=1);
+            }
+            .gradient2 {
+                background: -moz-linear-gradient(-45deg, rgba(61, 126, 170, 0.611) 0%, rgba(255, 228, 122, 0.611) 100%);
+                background: -webkit-gradient(linear, left top, right bottom, color-stop(0%, rgba(61, 126, 170, 0.611)), color-stop(100%, rgba(255, 228, 122, 0.611)));
+                background: -webkit-linear-gradient(-45deg, rgba(61, 126, 170, 0.611) 0%, rgba(255, 228, 122, 0.611) 100%);
+                background: -o-linear-gradient(-45deg, rgba(61, 126, 170, 0.611) 0%, rgba(255, 228, 122, 0.611) 100%);
+                background: -ms-linear-gradient(-45deg, rgba(61, 126, 170, 0.611) 0%, rgba(255, 228, 122, 0.611) 100%);
+                background: linear-gradient(135deg, rgba(61, 126, 170, 0.611) 0%, rgba(255, 228, 122, 0.611) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#993d7eaa', endColorstr='#ffe47a', GradientType=1);
+            }
+            .gradient3 {
+                background: -moz-linear-gradient(45deg, rgba(229, 93, 135, 0.611) 0%, rgba(95, 195, 228, 0.611) 100%);
+                /* FF3.6+ */
+                background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(229, 93, 135, 0.611)), color-stop(100%, rgba(95, 195, 228, 0.611)));
+                /* Chrome,Safari4+ */
+                background: -webkit-linear-gradient(45deg, rgba(229, 93, 135, 0.611) 0%, rgba(95, 195, 228, 0.611) 100%);
+                /* Chrome10+,Safari5.1+ */
+                background: -o-linear-gradient(45deg, rgba(229, 93, 135, 0.611) 0%, rgba(95, 195, 228, 0.611) 100%);
+                /* Opera 11.10+ */
+                background: -ms-linear-gradient(45deg, rgba(229, 93, 135, 0.611) 0%, rgba(95, 195, 228, 0.611) 100%);
+                /* IE10+ */
+                background: linear-gradient(45deg, rgba(229, 93, 135, 0.611) 0%, rgba(95, 195, 228, 0.611) 100%);
+                /* W3C */
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80e55d87', endColorstr='#805fc3e4', GradientType=1);
+                /* IE6-9 fallback on horizontal gradient */
+            }
+            .gradient4 {
+                background: -moz-linear-gradient(45deg, rgba(52, 143, 80, 0.611) 0%, rgba(86, 180, 211, 0.611) 100%);
+                /* FF3.6+ */
+                background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(52, 143, 80, 0.611)), color-stop(100%, rgba(86, 180, 211, 0.611)));
+                /* Chrome,Safari4+ */
+                background: -webkit-linear-gradient(45deg, rgba(52, 143, 80, 0.611) 0%, rgba(86, 180, 211, 0.611) 100%);
+                /* Chrome10+,Safari5.1+ */
+                background: -o-linear-gradient(45deg, rgba(52, 143, 80, 0.611) 0%, rgba(86, 180, 211, 0.611) 100%);
+                /* Opera 11.10+ */
+                background: -ms-linear-gradient(45deg, rgba(52, 143, 80, 0.611) 0%, rgba(86, 180, 211, 0.611) 100%);
+                /* IE10+ */
+                background: linear-gradient(45deg, rgba(52, 143, 80, 0.611) 0%, rgba(86, 180, 211, 0.611) 100%);
+                /* W3C */
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#70348f50', endColorstr='#7056b4d3', GradientType=1);
+                /* IE6-9 fallback on horizontal gradient */
+            }
+            .carousel-bg {
+                background:rgba (0, 0, 0, 0.75);
+                z-index:30;
+            }
+            .carousel-caption {
+                top:38vh;
+                text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
+                padding-right:300px;
+            }
+            .active-carousel-caption {
+                padding-right:300px !important;
+                right: 50px;
+                left: 50px;
+            }
+            #myCarousel {
+                height:100vh;
+            }
+            .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+                width: 100vw;
+                margin: auto;
+                box-sizing:border-box;
+                padding-right:300px;
+            }
+            .carousel-inner {
+                text-align:center;
+            }
+            /* fixing bootstrap */
+             @media screen and (min-width: 768px) {
+                .carousel-caption {
+                    right: 150px;
+                    left: 150px;
+                }
+            }
+            /* ---------- MEET HELIOS ---------- */
+             .meet-helios {
+                background: rgb(155, 83, 155);
+                background: -moz-linear-gradient(45deg, rgba(155, 83, 155, 1) 0%, rgba(186, 106, 186, 1) 26%, rgba(155, 83, 155, 1) 100%);
+                background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, rgba(155, 83, 155, 1)), color-stop(26%, rgba(186, 106, 186, 1)), color-stop(100%, rgba(155, 83, 155, 1)));
+                background: -webkit-linear-gradient(45deg, rgba(155, 83, 155, 1) 0%, rgba(186, 106, 186, 1) 26%, rgba(155, 83, 155, 1) 100%);
+                background: -o-linear-gradient(45deg, rgba(155, 83, 155, 1) 0%, rgba(186, 106, 186, 1) 26%, rgba(155, 83, 155, 1) 100%);
+                background: -ms-linear-gradient(45deg, rgba(155, 83, 155, 1) 0%, rgba(186, 106, 186, 1) 26%, rgba(155, 83, 155, 1) 100%);
+                background: linear-gradient(45deg, rgba(155, 83, 155, 1) 0%, rgba(186, 106, 186, 1) 26%, rgba(155, 83, 155, 1) 100%);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#9b539b', endColorstr='#9b539b', GradientType=1);
+            }
+            #stats {
+                width:100%;
+                box-sizing:border-box;
+                padding:8px;
+                text-align:left;
+                z-index:4;
+                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+            }
+            #stats span {
+                background:#101050;
+                color:white;
+                padding:6px;
+                border-radius:3px;
+                margin:5px;
+            }
+            #qs {
+                margin-bottom:12px;
+                font-weight:100;
+                text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+            }
+            #qs span {
+                font-weight:400;
+            }
+            .helios {
+                position:relative;
+                left:4vw;
+                max-width: calc((100vw - 300px) / 2.4);
+                max-height:90vh;
+                padding-top:6vh;
+                z-index:1;
+            }
+            .heliosAnimation {
+                -webkit-animation: heliosAnimation 3s ease-out;
+                -moz-animation: heliosAnimation 3s ease-out;
+                -ms-animation: heliosAnimation 3s ease-out;
+                -o-animation: heliosAnimation 3s ease-out;
+                animation: heliosAnimation 3s ease-out;
+            }
+            @-moz-keyframes heliosAnimation {
+                0% {
+                    left:-300px;
+                }
+                100% {
+                    left:4vw;
+                }
+            }
+            @-webkit-keyframes heliosAnimation {
+                0% {
+                    left:-300px;
+                }
+                100% {
+                    left:4vw;
+                }
+            }
+            /* ---------- WHAT IS FIRST? ---------- */
+             .what-is-first {
+                padding:30px;
+                color:black;
+                text-align:center;
+                overflow:hidden;
+            }
+            .what-is-first img {
+                width:80%;
+                padding:10px;
+                box-sizing:border-box;
+            }
+            /* ---------- MORE THAN ROBOTS ---------- */
+             .more-than-robots {
+                background:url('https://raw.githubusercontent.com/lauraschultz/2491website/gh-pages/media/roan.jpg') no-repeat center center;
+                background-attachment: fixed;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                background-position:calc(100px + 20vw) center;
+                height:100vh;
+                color:white;
+                text-align:center;
+                padding:30px;
+                box-sizing:border-box;
+                position:relative;
+            }
+            .more-than-robots .text {
+                text-align:justify;
+                width:100%;
+                padding-right:60px;
+                box-sizing:border-box;
+                text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+                font-size:17px;
+                position:absolute;
+                bottom:10px;
+                line-height:110%;
+            }
+            /* ---------- SEASON SCHEDULE ---------- */
+             .season-schedule {
+                background:url("https://raw.githubusercontent.com/lauraschultz/2491website/gh-pages/media/champs.jpg") no-repeat center center;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                background-attachment: fixed;
+            }
+            .season-schedule td {
+                color:white;
+                text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.9);
+            }
+            time {
+                text-shadow: none;
+                z-index:0;
+                position:static;
+            }
+            time.icon * {
+                display:block;
+                width:100%;
+                font-size:.8em;
+                font-weight:bold;
+                font-style:normal;
+                text-align:center;
+            }
+            time.icon strong {
+                position:absolute;
+                top:0;
+                padding:0.4em 0;
+                color:#fff;
+                background-color:#0063ad;
+                border-bottom:1px dashed #00234d;
+                box-shadow:0 2px 0 #0063ad;
+            }
+            time.icon em {
+                position:absolute;
+                bottom:0.3em;
+                color:#00234d;
+            }
+            time.icon span {
+                width:100%;
+                font-size:2.6em;
+                letter-spacing:-0.05em;
+                padding-top:0.8em;
+                color:#2f2f2f;
+            }
+            time.icon {
+                font-size:.9em;
+                display:block;
+                position:relative;
+                width:7em;
+                height:7em;
+                background-color:#fff;
+                margin:.6em auto;
+                border-radius:0.6em;
+                box-shadow:0 1px 0 #bdbdbd, 0 2px 0 #fff, 0 3px 0 #bdbdbd, 0 4px 0 #fff, 0 5px 0 #bdbdbd, 0 0 0 1px #bdbdbd;
+                overflow:hidden;
+            }
+            .event {
+                font-size:.9em;
+            }
+            /* ---------- SPONSORS ---------- */
+             .sponsors {
+                background:url('https://raw.githubusercontent.com/lauraschultz/2491website/gh-pages/media/subtle_white_mini_waves.png');
+                background-attachment: fixed;
+                border-top:none;
+            }
+            .sponsors img {
+                display:inline;
+                max-width:37vw;
+                max-height:17vh;
+                padding:1.5vw;
+            }
+            #logo-background {
+                background:white;
+                box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.6);
+            }
+            /* ---------- CONTACT US ---------- */
+             #contact-us {
+                width:100vw;
+                padding:30px;
+                background:url('https://raw.githubusercontent.com/lauraschultz/2491website/gh-pages/media/footer_lodyas.png');
+                color:white;
+                text-align:center;
+                overflow:auto;
+                box-sizing:border-box;
+                padding-right:330px;
+            }
+            #contact-us a {
+                color:white;
+                text-decoration:none;
+            }
+            #contact-us a:hover {
+                text-decoration:underline;
+            }
+            #contact-us td {
+                color:white;
+            }
+            #contact-us table {
+                text-align:left;
+            }
+            #contact-us tr {
+                padding-top:20px;
+            }
+            /* ---------- media queries (for responsiveness) ---------- */
+             @media screen and (max-width: 992px) {
+                .helios {
+                    max-width:50vw;
+                }
+                .all, .more-than-robots, .what-is-first {
+                    height:auto;
+                }
+                .overview {
+                    min-height:650px;
+                    background-position: center center;
+                }
+                .more-than-robots, .first {
+                    background-position: center center;
+                }
+            }
+            @media screen and (max-width: 768px) {
+                #left-menu {
+                    margin-left:-300px;
+                }
+                .menu-show {
+                    display:inline;
+                }
+                #sponsors-visionary {
+                    left:0;
+                }
+                #full-container {
+                    padding-left:0;
+                }
+                .all {
+                    padding-right:30px;
+                }
+                .blog {
+                    padding-right:0;
+                }
+                .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+                    padding-right:0;
+                }
+                .carousel-caption {
+                    padding-right:0;
+                    top:28vh;
+                }
+                #ctitle {
+                    padding-right:0;
+                }
+                .continue {
+                    right:15px;
+                }
+            }
+        </style>
