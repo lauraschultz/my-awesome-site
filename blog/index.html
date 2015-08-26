@@ -139,14 +139,27 @@
     </div>
 </div>
 <div id="full-container">
-    <div class="page-title"><span id="thin">Team </span><span id="thick">Blog</span>
 
-    </div>
-    <div class="container3">
-        <div class="title-container"><div class="title"><h2 class="np">title</h2></div></div>
+    <div class="page-title"><span id="thin">Team </span><span id="thick">Blog</span></div>
+
+
+    {% for posts in main %}
+      {% for post in posts %}
+        <div class="container3">
+        <div class="title-container"><div class="title"><h2 class="np">{{ post.title }}</h2></div></div>
         <div class="arrow-down"></div>
         <div class="content">post content!</div>
-    </div>
+        </div>
+      {% endfor %}
+    {% endfor %}
+
+
+
+
+    
+
+    
+    
 </div>
 <div id="grad"></div>
 </div>
