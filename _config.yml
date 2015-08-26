@@ -10,8 +10,7 @@ url: "http://lauraschultz.github.io/my-awesome-site/" # the base hostname & prot
 twitter_username: jekyllrb
 github_username:  jekyll
 
-gems:
-  - jekyll-auto-image
+picture: ""
 
 # Build settings
 markdown: kramdown
