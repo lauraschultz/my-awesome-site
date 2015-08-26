@@ -1,0 +1,136 @@
+<style>
+    html {
+        overflow:auto;
+    }
+    body {         
+        width:100%;		
+        height:100%;		
+        margin:0;		
+        padding:0;		
+        font-family:'Roboto', sans-serif;		
+        background: -moz-linear-gradient(-45deg,  rgba(111,44,111,0.81) 0%, rgba(73,160,157,0.81) 100%); /* FF3.6+ */		
+        background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(111,44,111,0.81)), color-stop(100%,rgba(73,160,157,0.81))); /* Chrome,Safari4+ */		
+        background: -webkit-linear-gradient(-45deg,  rgba(111,44,111,0.81) 0%,rgba(73,160,157,0.81) 100%); /* Chrome10+,Safari5.1+ */		
+        background: -o-linear-gradient(-45deg,  rgba(111,44,111,0.81) 0%,rgba(73,160,157,0.81) 100%); /* Opera 11.10+ */		
+        background: -ms-linear-gradient(-45deg,  rgba(111,44,111,0.81) 0%,rgba(73,160,157,0.81) 100%); /* IE10+ */		
+        background: linear-gradient(135deg,  rgba(111,44,111,0.81) 0%,rgba(73,160,157,0.81) 100%); /* W3C */		
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#806f2c6f', endColorstr='#8049a09d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */		
+        background-repeat:no-repeat;		
+        text-align:center;		
+        color:white;		
+        background-position:absolute;		
+        background-attachment: fixed;		
+        overflow:auto;		
+    }
+    .tab-content {
+        border-left: 1px solid #ddd;
+        border-right: 1px solid #ddd;
+        border-bottom: 1px solid #ddd;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    }
+    .nav-tabs {
+        margin-bottom: 0;
+        margin-top:20px;
+    }
+    .vid {
+        position: relative;
+        padding-bottom: 56.25%;
+        margin:10px;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+    }
+    .vid iframe, .vid object, .vid embed {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    #grad {
+        width:100%;
+        height:100%;
+        position:absolute;
+        top:0;
+        left:0;
+        z-index:-1;
+        background:url("http://static.tumblr.com/u0zl25j/QtUnl2pax/robot.png");
+    }
+    .page-title {
+        text-align:center;
+        color:white;
+        padding-top: 30px;
+    }
+    .container {
+        min-width:500px;
+        max-width:900px;
+        margin:0 auto;
+        text-align:left;
+        color:black;
+        margin-top:20px;
+        overflow:auto;
+        margin-top:50px;
+        margin-bottom:40px;
+        border: 1px solid #c9c3ba;
+        padding: 1.5em;
+        padding-top:.4em;
+        background:white;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        padding:30px;
+    }
+    .container2 {
+        min-width:500px;
+        max-width:900px;
+        padding:30px;
+        margin:0 auto;
+        text-align:left;
+        color:black;
+    }
+    .container3 {
+        min-width:500px;
+        max-width:900px;
+        margin:0 auto;
+        text-align:left;
+        color:black;
+        background:white;
+        margin-top:50px;
+    }
+    .container3 .title {
+        background:#101028;
+        padding:20px;
+        color:white;
+        border:#606060 dashed 1px;
+    }
+    .container3 .content {
+        padding:10px 30px 30px 30px;
+    }
+    .container3 .title-container {
+        border:5px solid #101028;
+    }
+    #button {
+        border: 2px solid #39908d;
+        padding:12px;
+        background:transparent;
+        border-radius:3px;
+        min-width:100%;
+        color:#39908d;
+    }
+    #button:hover {
+        background:#39908d;
+        color:white;
+    }
+    .tab-content>.active {
+        background:white;
+        padding:30px;
+    }
+    .nav-tabs > li > a {
+        background:#f0f0f0;
+        border:1px #ddd solid;
+        margin-right:5px;
+        color:#555;
+    }
+    .nav-tabs > li > a:hover {
+        background:#f0f0f0;
+        border:1px #ddd solid;
+    }
+  </style>
