@@ -71,7 +71,19 @@ layout: default
                     {% for post in site.posts limit:1 offset:3 %}
                 <!-- Wrapper for slides -->
                     <div class="item">
-                        <img src="http://www.2491nomythic.com/wp-content/uploads/2011/01/P1030858.jpg">
+                      {% assign foundImage = 0 %}
+                      {% assign images = post.content | split:"<img " %}
+                      {% for image in images %}
+                        {% if image contains 'src' %}
+
+                            {% if foundImage == 0 %}
+                                {% assign html = image | split:"/>" | first %}
+                                <img {{ html }} />
+                                {% assign foundImage = 1 %}
+                            {% endif %}
+                        {% endif %}
+                      {% endfor %}
+
                         <div class="gradient gradient4" class="image"></div>
                         <div class="carousel-caption">
                             <div class="carousel-bg">
