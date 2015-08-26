@@ -66,8 +66,8 @@
     <div class="page-title"><span id="thin">Team </span><span id="thick">Blog</span></div>
 
 
-    {% for posts %}
-        <div class="container3">
+    {% for post in site.posts %}        
+    <div class="container3">
         <div class="title-container"><div class="title"><h2 class="np">{{ post.title }}</h2></div></div>
         <div class="arrow-down"></div>
         <div class="content">post content!</div>
