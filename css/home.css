@@ -449,6 +449,7 @@
             }
             .event {
                 font-size:.9em;
+                text-align: left;
             }
             /* ---------- SPONSORS ---------- */
              .sponsors {

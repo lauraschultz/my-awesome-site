@@ -1,0 +1,347 @@
+<html>
+    <head>
+        {% include head.html %}
+        <link rel="stylesheet" type="text/css" media="screen" href="../stylesheets/page.css">
+        <title>Robot Archive - 2491 No Mythic</title>
+        <style>
+            html {
+                overflow:auto;
+            }
+            body {         
+                width:100%;		
+                height:100%;		
+                margin:0;		
+                padding:0;		
+                font-family:'Roboto', sans-serif;		
+                background: -moz-linear-gradient(-45deg,  rgba(111,44,111,0.81) 0%, rgba(73,160,157,0.81) 100%); /* FF3.6+ */		
+                background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(111,44,111,0.81)), color-stop(100%,rgba(73,160,157,0.81))); /* Chrome,Safari4+ */		
+                background: -webkit-linear-gradient(-45deg,  rgba(111,44,111,0.81) 0%,rgba(73,160,157,0.81) 100%); /* Chrome10+,Safari5.1+ */		
+                background: -o-linear-gradient(-45deg,  rgba(111,44,111,0.81) 0%,rgba(73,160,157,0.81) 100%); /* Opera 11.10+ */		
+                background: -ms-linear-gradient(-45deg,  rgba(111,44,111,0.81) 0%,rgba(73,160,157,0.81) 100%); /* IE10+ */		
+                background: linear-gradient(135deg,  rgba(111,44,111,0.81) 0%,rgba(73,160,157,0.81) 100%); /* W3C */		
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#806f2c6f', endColorstr='#8049a09d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */		
+                background-repeat:no-repeat;		
+                text-align:center;		
+                color:white;		
+                background-position:absolute;		
+                background-attachment: fixed;		
+                overflow:auto;		
+            }
+            .logo {
+                max-width:250px;
+                padding:10px 0px 10px 0px;
+            }
+            .robot-name {
+                vertical-align: top;
+                text-align:right;
+            }
+            h1 {
+                font-size:80px;
+                font-weight:900;
+                text-align:center;
+                display:inline;
+                color:black;
+                padding:10px;
+                font-style:italic;
+                text-transform:uppercase;
+                text-align:right;
+            }
+            h1 span {
+                font-size:90px;
+            }
+            
+           
+            #qs {
+                margin-bottom:12px;
+                font-weight:100;
+            }
+            #qs span {
+                font-weight:400;
+            }
+            #stats {
+                width:100%;
+                padding:20px;
+                box-sizing:border-box;
+                text-align:left;2
+                z-index:4;
+            }
+            #stats span {
+                background:#101050;
+                color:white;
+                padding:6px;
+                border-radius:3px;
+                margin:5px;
+            }
+            .robot {
+                width:100%;
+                max-height:500px;
+            }
+            .tab-content {
+                box-shadow:none;
+            }
+            @media screen and (max-width: 768px) {
+                #left-menu {
+                    margin-left:-300px;
+                }
+                .menu-show {
+                    display:inline;
+                }
+                
+                #full-container {
+                    padding-left:0;
+                }
+                
+            }
+            
+        </style>
+    </head>
+    <body>
+
+        {% include left-menu.html %}
+
+<div id="full-container">
+    <div class="page-title"><span id="thin">Robot </span><span id="thick">Archive</span>
+
+    </div>
+    <div class="container">
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <img class="logo" src="https://raw.githubusercontent.com/lauraschultz/2491website/gh-pages/media/game-logos/Recycle-Rush.png" />
+                </td>
+                <td class="robot-name">
+                     <h1><span>H</span>elios</h1>
+
+                </td>
+            </tr>
+        </table>
+        <div class="col-sm-6">
+            <img class="robot" src="https://raw.githubusercontent.com/lauraschultz/2491website/gh-pages/media/robots/recycle-rush.png" />
+        </div>
+        <div class="col-sm-6">
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#robot">Robot Reveal Video</a>
+
+                </li>
+                <li><a data-toggle="tab" href="#animation">Game Animation</a>
+
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div id="robot" class="tab-pane fade in active">
+                    <div class="vid">
+                        <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/1O_yJkeMPFo"></iframe>
+                    </div>
+                </div>
+                <div id="animation" class="tab-pane fade">
+                    <div class="vid">
+                        <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/W6UYFKNGHJ8"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div id="stats">
+                <div id="qs"><span>Weight:</span>116 lbs</div>
+                <div id="qs"><span>Dimensions:</span>26.5 x 26.5 x 78 inches</div>
+                <div id="qs"><span>Drive Train:</span>Omni O-Drive</div>
+                <div id="qs"><span>Tote Capabilities:</span>Can stack four totes</div>
+                <div id="qs"><span>Container Capabilities:</span>Can add a recycling container to a 5 tote stack</div>
+                <div id="qs"> <span>Autonomous function:</span> Can either pick up a container from the step or pick up a coopertition tote and container from the staging zone</div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <img class="logo" src="https://raw.githubusercontent.com/lauraschultz/2491website/gh-pages/media/game-logos/aerial-assist.png" />
+                </td>
+                <td class="robot-name">
+                     <h1><span>A</span>rtemis</h1>
+
+                </td>
+            </tr>
+        </table>
+        <div class="col-sm-6">
+            <img class="robot" src="https://raw.githubusercontent.com/lauraschultz/2491website/gh-pages/media/robots/aerial-assist.png" />
+        </div>
+        <div class="col-sm-6">
+            <ul class="nav nav-tabs">
+                <li class="active"><a data-toggle="tab" href="#robot2">Robot Reveal Video</a>
+
+                </li>
+                <li><a data-toggle="tab" href="#animation2">Game Animation</a>
+
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div id="robot2" class="tab-pane fade in active">
+                    <div class="vid">
+                        <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/CRlJUN-5tho"></iframe>
+                    </div>
+                </div>
+                <div id="animation2" class="tab-pane fade">
+                    <div class="vid">
+                        <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/f5zWzICG5to"></iframe>
+                    </div>
+                </div>
+            </div>
+            <div id="stats">
+                <div id="qs"><span>Weight:</span>
+
+                </div>
+                <div id="qs"><span>Dimensions:</span> 
+                </div>
+                <div id="qs"><span>Drive Train:</span>West Coast Drive</div>
+                <div id="qs"><span>Shooting Capabilities:</span>Can shoot into high and low goal</div>
+                <div id="qs"><span>Lifter Capabilities:</span>Can pick up a ball from floor and inbound from human player</div>
+                <div id="qs"> <span>Autonomous function:</span> Shoots one ball into the high goal</div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <img class="logo" src="https://raw.githubusercontent.com/lauraschultz/2491website/gh-pages/media/game-logos/Ultimate-Ascent.jpg" />
+                </td>
+                <td class="robot-name">
+                     <h1><span></span></h1>
+
+                </td>
+            </tr>
+        </table>
+        <div class="col-sm-6">
+            <img class="robot" src="https://raw.githubusercontent.com/lauraschultz/2491website/gh-pages/media/robots/ultimate-ascent.jpg" />
+        </div>
+        <div class="col-sm-6">
+            <div style="font-size:15px; color:#555; padding:5px">Game Animation</div>
+            <div class="vid">
+                <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/wa5MGEZNrf0"></iframe>
+            </div>
+            <div id="stats"></div>
+        </div>
+        </div>
+        
+        <div class="container">
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <img class="logo" src="https://raw.githubusercontent.com/lauraschultz/2491website/gh-pages/media/game-logos/rebound-rumble.png" />
+                </td>
+                <td class="robot-name">
+                     <h1><span></span></h1>
+
+                </td>
+            </tr>
+        </table>
+        <div class="col-sm-6">
+            <!-- <img class="robot" src="https://raw.githubusercontent.com/lauraschultz/2491website/gh-pages/media/robots/rebound-rumble.jpg"> -->
+        </div>
+        <div class="col-sm-6">
+            <div style="font-size:15px; color:#555; padding:5px">Game Animation</div>
+            <div class="vid">
+                <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/nOXsdhZZSdM"></iframe>
+            </div>
+            <div id="stats"></div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <img class="logo" src="https://raw.githubusercontent.com/lauraschultz/2491website/gh-pages/media/game-logos/logo-motion.png" />
+                </td>
+                <td class="robot-name">
+                     <h1><span></span></h1>
+
+                </td>
+            </tr>
+        </table>
+        <div class="col-sm-6">
+            <!-- <img class="robot" src="https://raw.githubusercontent.com/lauraschultz/2491website/gh-pages/media/robots/logo-motion.jpg" /> -->
+        </div>
+        <div class="col-sm-6">
+            <div style="font-size:15px; color:#555; padding:5px">Game Animation</div>
+            <div class="vid">
+                <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/DTJOXTIaa9g"></iframe>
+            </div>
+            <div id="stats"></div>
+        </div>
+    </div>
+    <div class="container">
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <img class="logo" src="https://raw.githubusercontent.com/lauraschultz/2491website/gh-pages/media/game-logos/breakaway.jpg" />
+                </td>
+                <td class="robot-name">
+                     <h1><span></span></h1>
+
+                </td>
+            </tr>
+        </table>
+        <div class="col-sm-6">
+            <img class="robot" src="https://raw.githubusercontent.com/lauraschultz/2491website/gh-pages/media/robots/breakaway.jpg" />
+        </div>
+        <div class="col-sm-6">
+            <div style="font-size:15px; color:#555; padding:5px">Game Animation</div>
+            <div class="vid">
+                <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/Ex90Aw4PdAI"></iframe>
+            </div>
+            <div id="stats"></div>
+        </div>
+    </div>
+    <div class="container">
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <img class="logo" src="https://raw.githubusercontent.com/lauraschultz/2491website/gh-pages/media/game-logos/lunacy.jpg" />
+                </td>
+                <td class="robot-name">
+                     <h1><span></span></h1>
+
+                </td>
+            </tr>
+        </table>
+        <div class="col-sm-6">
+            <img class="robot" src="https://raw.githubusercontent.com/lauraschultz/2491website/gh-pages/media/robots/lunacy.jpg" />
+        </div>
+        <div class="col-sm-6">
+            <div style="font-size:15px; color:#555; padding:5px">Game Animation</div>
+            <div class="vid">
+                <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/ZnGfbGzEFrM"></iframe>
+            </div>
+            <div id="stats"></div>
+        </div>
+    </div>
+    <div class="container">
+        <table style="width:100%">
+            <tr>
+                <td>
+                    <img class="logo" src="https://raw.githubusercontent.com/lauraschultz/2491website/gh-pages/media/game-logos/overdrive.jpg" />
+                </td>
+                <td class="robot-name">
+                     <h1><span></span></h1>
+
+                </td>
+            </tr>
+        </table>
+        <div class="col-sm-6">
+            <img class="robot" src="https://raw.githubusercontent.com/lauraschultz/2491website/gh-pages/media/robots/overdrive.jpg" />
+        </div>
+        <div class="col-sm-6">
+            <div style="font-size:15px; color:#555; padding:5px">Game Animation</div>
+            <div class="vid">
+                <iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/LYnUDaEi1D8"></iframe>
+            </div>
+            <div id="stats"></div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+<div id="grad"></div>
+</div>
+</body>
+</html>
