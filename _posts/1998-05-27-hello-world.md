@@ -6,4 +6,4 @@ categories: jekyll update
 ---
 another test. does it go in order??
 
-![here's a picture]({{ site.url }}/media/roan.jpg)
+![here's a picture](https://raw.githubusercontent.com/lauraschultz/my-awesome-site/gh-pages/media/roan.jpg)
