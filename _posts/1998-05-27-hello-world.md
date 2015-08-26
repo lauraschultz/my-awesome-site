@@ -5,3 +5,5 @@ date:   2015-08-25 17:44:46
 categories: jekyll update
 ---
 another test. does it go in order??
+
+({{ site.url }}/media/roan.jpg)
