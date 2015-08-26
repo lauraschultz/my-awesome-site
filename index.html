@@ -20,7 +20,7 @@ layout: default
                 <div class="carousel-inner" role="listbox">
                   {% for post in site.posts limit:1 %}
                     <div class="item active">
-                        {{ post.image }}
+                        <img src="{{ post.image }}" />
                         <div class="gradient gradient1" class="image"></div>
                         <div class="carousel-caption">
                             <div class="carousel-bg">
@@ -37,7 +37,7 @@ layout: default
 <<<<<<< HEAD
                     {% for post in site.posts limit:1 offset:1 %}
                     <div class="item">
-                        {{ post.image }}
+                        <img src="{{ post.image }}" />
                         <div class="gradient gradient2" class="image"></div>
                         <div class="carousel-caption">
                             <div class="carousel-bg">
@@ -54,7 +54,7 @@ layout: default
                     {% for post in site.posts limit:1 offset:2 %}
                 <!-- Wrapper for slides -->
                     <div class="item">
-                        {{ post.image }}
+                        <img src="{{ post.image }}" />
                         <div class="gradient gradient3" class="image"></div>
                         <div class="carousel-caption">
                             <div class="carousel-bg">
@@ -71,7 +71,7 @@ layout: default
                     {% for post in site.posts limit:1 offset:3 %}
                 <!-- Wrapper for slides -->
                     <div class="item">
-                        {{ post.image }}
+                        <img src="{{ post.image }}" />
 
                         <div class="gradient gradient4" class="image"></div>
                         <div class="carousel-caption">
