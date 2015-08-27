@@ -1,5 +1,5 @@
 ---
-catergory: main
+category: main
 title: "Go FIRST Summit"
 date: 2015-07-18
 picture: go-first.jpg

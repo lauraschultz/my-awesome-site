@@ -1,5 +1,5 @@
 ---
-catergory: main
+category: main
 title: "Sponsor Presentations"
 date: 2015-06-26
 picture: sponsor-presentation.jpg

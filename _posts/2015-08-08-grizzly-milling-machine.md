@@ -1,5 +1,5 @@
 ---
-catergory: main
+category: main
 title: "Grizzly Milling Machine"
 date: 2015-08-08
 picture: mill-6.jpg

@@ -1,5 +1,5 @@
 ---
-catergory: main
+category: main
 title: "Robotics Retreat"
 date: 2015-06-20
 picture: retreat-6.jpg
