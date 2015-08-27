@@ -11,5 +11,8 @@ github_username:  jekyll
 
 picture: ""
 
+gems:
+  - jekyll-sitemap
+
 # Build settings
 markdown: kramdown
