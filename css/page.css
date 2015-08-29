@@ -110,10 +110,8 @@
     }
     .container3 .content p img {
         text-align:left;
-    }
-    .container3 .content img {
         display: inline-block;
-        height: 250;
+        width: calc(50%-10px);
         padding: 5px;
         margin: 0 auto;
     }
