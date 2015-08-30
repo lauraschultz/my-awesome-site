@@ -71,7 +71,7 @@
              .overview {
                 padding-top:0px;
                 text-align:center;
-                background: url('https://raw.githubusercontent.com/lauraschultz/2491website/gh-pages/media/team.JPG') no-repeat center center;
+                background: url('https://raw.githubusercontent.com/lauraschultz/nomythic/gh-pages/media/team.JPG') no-repeat center center;
                 background-attachment: fixed;
                 -webkit-background-size: cover;
                 -moz-background-size: cover;
@@ -148,7 +148,7 @@
             }
             /* ---------- FIRST ---------- */
              .first {
-                background:url("https://raw.githubusercontent.com/lauraschultz/2491website/gh-pages/media/susan.jpg") no-repeat center center;
+                background:url("https://raw.githubusercontent.com/lauraschultz/nomythic/gh-pages/media/susan.jpg") no-repeat center center;
                 background-attachment: fixed;
                 -webkit-background-size: cover;
                 -moz-background-size: cover;
@@ -362,7 +362,7 @@
             }
             /* ---------- MORE THAN ROBOTS ---------- */
              .more-than-robots {
-                background:url('https://raw.githubusercontent.com/lauraschultz/2491website/gh-pages/media/roan.jpg') no-repeat center center;
+                background:url('https://raw.githubusercontent.com/lauraschultz/nomythic/gh-pages/media/roan.jpg') no-repeat center center;
                 background-attachment: fixed;
                 -webkit-background-size: cover;
                 -moz-background-size: cover;
@@ -389,7 +389,7 @@
             }
             /* ---------- SEASON SCHEDULE ---------- */
              .season-schedule {
-                background:url("https://raw.githubusercontent.com/lauraschultz/2491website/gh-pages/media/champs.jpg") no-repeat center center;
+                background:url("https://raw.githubusercontent.com/lauraschultz/nomythic/gh-pages/media/champs.jpg") no-repeat center center;
                 -webkit-background-size: cover;
                 -moz-background-size: cover;
                 -o-background-size: cover;
@@ -452,7 +452,7 @@
             }
             /* ---------- SPONSORS ---------- */
              .sponsors {
-                background:url('https://raw.githubusercontent.com/lauraschultz/2491website/gh-pages/media/subtle_white_mini_waves.png');
+                background:url('https://raw.githubusercontent.com/lauraschultz/nomythic/gh-pages/media/subtle_white_mini_waves.png');
                 background-attachment: fixed;
                 border-top:none;
             }
@@ -470,7 +470,7 @@
              #contact-us {
                 width:100vw;
                 padding:30px;
-                background:url('https://raw.githubusercontent.com/lauraschultz/2491website/gh-pages/media/footer_lodyas.png');
+                background:url('https://raw.githubusercontent.com/lauraschultz/nomythic/gh-pages/media/footer_lodyas.png');
                 color:white;
                 text-align:center;
                 overflow:auto;
