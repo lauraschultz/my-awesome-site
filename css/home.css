@@ -472,7 +472,7 @@
              #contact-us {
                 width:100vw;
                 padding:30px;
-                background:url('{{ site.baseurl }}/footer_lodyas.png');
+                background:url('{{ site.baseurl }}/media/footer_lodyas.png');
                 color:white;
                 text-align:center;
                 overflow:auto;
