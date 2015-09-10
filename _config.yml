@@ -1,18 +1,14 @@
 # Site settings
 title: 2491 No Mythic
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  We are FIRST robotics team 2491 No Mythic from St. Paul, Minnesota.
+   Made up of three small charter schools, we are the only metro Minnesota team to win a regional in the 2016 season!
+   Come visit us at the FIRST World Championships!
 baseurl: "http://lauraschultz.github.io/nomythic" # the subpath of your site, e.g. /blog/
 url: "http://lauraschultz.github.io/nomythic" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
 
 picture: ""
 
-gems:
-  - jekyll-sitemap
 
 # Build settings
 markdown: kramdown
